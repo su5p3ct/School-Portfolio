@@ -1,0 +1,166 @@
+img {
+    width: 50px;
+}
+
+body {
+    background-color: #e4e4e4;
+    padding: 0;
+    margin: 0;
+}
+
+#container,
+h1,
+footer {
+    margin: 20px;
+    width: 97%;
+    text-align: center;
+}
+
+.animations {
+    margin: 20px;
+    padding: 16px;
+    height: 300px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: #f5f5f0;
+}
+
+.separator {
+    height: 15px;
+}
+
+.transitions {
+    margin: 20px;
+    padding: 16px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: #f5f5f0;
+    text-align: left;
+}
+
+#btn1 {
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+    background-color: cornflowerblue;
+    transition: all 0.1s ease-in-out;
+    transform: translate3D(0, 0, 0);
+}
+ 
+#btn1:hover {
+    cursor: pointer;
+    background-color: #00FF00;
+}
+
+#btn2 {
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+    background-color: cornflowerblue;
+    transition: all 0.1s ease-in-out;
+    transform: translate3D(0, 0, 0);
+}
+
+#btn2:hover {
+    cursor: pointer;
+    filter: drop-shadow(8px 8px 5px gray);
+}
+
+#btn3 {
+    position: relative;
+    width: 30px;
+    height: 50px;
+    background-color: rgb(223, 12, 135);
+    border-radius: 50% / 100%;
+    display: inline-block;
+    transition: all 0.1s ease-in-out;
+    transform: translate3D(40px, 0, 0); /* Move to the right */
+}
+
+/* Wings */
+#btn3::before,
+#btn3::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 50px;
+    background-color: rgb(241, 10, 241);
+    border-radius: 50%;
+    top: 0;
+}
+
+#btn3::before {
+    left: -35px;
+}
+
+#btn3::after {
+    right: -35px;
+}
+
+#btn3:hover {
+    cursor: pointer;
+    background-color: #ee09c8;
+}
+
+/* Hover effect for wings */
+#btn3:hover::before,
+#btn3:hover::after {
+    background-color: #6e06e6;
+}
+/* Hover Effect */
+#btn3:hover {
+    background-color: crimson;
+    transform: translateX(40px) scale(1.1);
+}
+#btn4 {
+    position: relative;
+    left: 80px;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    display: inline-block;
+    clip-path: polygon(
+        50% 15%, 61% 0%, 75% 15%, 100% 40%, 75% 80%, 50% 100%, 25% 80%, 0% 40%, 25% 15%, 39% 0%
+    );
+    transition: all 0.3s ease-in-out;
+    animation: pulse 1.5s infinite;
+    transform: translateX(40px); /* Move to the right */
+}
+
+
+
+/* Pulsating Animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #FF5722;
+    display: block;    
+    animation: bounce .5s;
+    animation-direction: alternate;      
+    animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+    animation-iteration-count: infinite;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 275px, 0);               
+    }
+}

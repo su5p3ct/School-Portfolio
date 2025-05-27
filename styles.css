@@ -1,0 +1,173 @@
+/* General Styles */
+body {
+    background: linear-gradient(45deg, black, purple);
+    color: silver;
+    font-family: 'Lucida Handwriting', cursive;
+    text-align: center;
+    margin: 0;
+}
+
+/* Hero Section */
+.hero {
+    padding: 50px;
+    text-align: center;
+}
+
+.hero-img {
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid silver;
+}
+
+/* Text Animation */
+.animate-text {
+    animation: textGlow 2s infinite alternate;
+}
+
+@keyframes textGlow {
+    from { text-shadow: 0 0 10px silver; }
+    to { text-shadow: 0 0 20px purple; }
+}
+
+/* CTA Button */
+.cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background: silver;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.cta:hover {
+    transform: scale(1.1);
+    background: purple;
+    color: rgb(117, 116, 116);
+}
+
+css
+/* Weekly Labs Section */
+#labs {
+    padding: 40px;
+}
+
+.lab-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.lab-card {
+    background-color: rgba(128, 0, 128, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    width: 200px;
+    text-align: center;
+}
+
+.lab-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px silver;
+}
+
+.hidden-content {
+    display: none;
+    font-size: 14px;
+    color: silver;
+    margin-top: 10px;
+}
+/* Reveal Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.lab-card:hover .hidden-content {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+.lab-preview {
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid silver;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+pre {
+    background: black;
+    color: silver;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: monospace;
+    overflow-x: auto;
+}
+
+button {
+    padding: 8px 15px;
+    background: silver;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: purple;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Drawing Board Section */
+#drawing-board {
+    padding: 30px;
+    background: linear-gradient(45deg, black, purple);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgb(143, 141, 141);
+    margin: 40px auto;
+    max-width: 600px;
+}
+
+#canvas {
+    background-color: white;
+    border: 3px solid silver;
+    border-radius: 10px;
+    box-shadow: 0 0 10px purple;
+    cursor: crosshair;
+    display: block;
+    margin: auto;
+}
+
+/* Tools */
+.tools {
+    margin-top: 15px;
+}
+
+.tools button, .tools input {
+    padding: 8px 15px;
+    background: silver;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tools button:hover {
+    background: purple;
+    color: #888888;
+    transform: scale(1.1);
+}
+
+.tools input {
+    border: 2px solid #c0c0c0;
+    background: black;
+    color: #818080;
+    border-radius: 5px;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Animation Labs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <img src="images\Snapchat-1874962989~2 (1).jpg" alt="Headshot of Amy" class="hero-img">
+        <h1 class="animate-text">Welcome to My Web Animation Labs</h1>
+        <p>Explore my weekly creations and leave your mark on the drawing board.</p>
+        <a href="#labs" class="cta">View Labs</a>
+    </header>
+
+<section id="labs">
+    <h2>Weekly Labs</h2>
+    <div class="lab-container">
+        <!-- Week 1 -->
+        <div class="lab-card" onclick="toggleLab('week1')">
+            <h3>Week 1</h3>
+            <p class="hidden-content" id="week1">
+                <strong>Subject:</strong> Animation & Transition Demonstrations<br>
+                <pre><code>@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }</code></pre>
+                <img src="images\a1.png" alt="Week 1 Preview" class="lab-preview">
+                <button onclick="openPopup('week 1 test page.html')">View Demo</button>
+            </p>
+        </div>
+
+        <!-- Week 2 -->
+        <div class="lab-card" onclick="toggleLab('week2')">
+            <h3>Week 2</h3>
+            <p class="hidden-content" id="week2">
+                <strong>Subject:</strong> Timing Functions<br>
+                <pre><code>.hover-effect:hover { transform: scale(1.2); }</code></pre>
+                <img src="images\a2.png" alt="Week 2 Preview" class="lab-preview">
+                <button onclick="openPopup('wk2.html')">View Demo</button>
+            </p>
+        </div>
+
+        <!-- Week 3 -->
+        <div class="lab-card" onclick="toggleLab('week3')">
+            <h3>Week 3</h3>
+            <p class="hidden-content" id="week3">
+                <strong>Topic:</strong> Interactive UI Transitions<br>
+                <pre><code>.slide-in { animation: slide 1s ease-in; }</code></pre>
+                <img src="images\w_Wild-Horses-1.png" alt="Week 3 Preview" class="lab-preview">
+                <button onclick="openPopup('wk3.html')">View Demo</button>
+            </p>
+        </div>
+
+        <!-- Week 4 -->
+        <div class="lab-card" onclick="toggleLab('week4')">
+            <h3>Week 4</h3>
+            <p class="hidden-content" id="week4">
+                <strong>Topic:</strong> Interactive UI Transitions<br>
+                <pre><code>.slide-in { animation: slide 1s ease-in; }</code></pre>
+                <img src="week4-preview.jpg" alt="Week 4 Preview" class="lab-preview">
+                <button onclick="openPopup('week4-final.html')">View Demo</button>
+            </p>
+        </div>
+
+        <!-- Week 5 -->
+        <div class="lab-card" onclick="toggleLab('week5')">
+            <h3>Week 5</h3>
+            <p class="hidden-content" id="week5">
+                <strong>Topic:</strong> Interactive UI Transitions<br>
+                <pre><code>.slide-in { animation: slide 1s ease-in; }</code></pre>
+                <img src="week5-preview.jpg" alt="Week 5 Preview" class="lab-preview">
+                <button onclick="openPopup('week5-final.html')">View Demo</button>
+            </p>
+        </div>
+
+        <!-- Week 6 -->
+        <div class="lab-card" onclick="toggleLab('week6')">
+            <h3>Week 6</h3>
+            <p class="hidden-content" id="week6">
+                <strong>Topic:</strong> Interactive UI Transitions<br>
+                <pre><code>.slide-in { animation: slide 1s ease-in; }</code></pre>
+                <img src="week6-preview.jpg" alt="Week 6 Preview" class="lab-preview">
+                <button onclick="openPopup('week6-final.html')">View Demo</button>
+            </p>
+        </div>
+
+        <!-- Week 7 -->
+        <div class="lab-card" onclick="toggleLab('week7')">
+            <h3>Week 7</h3>
+            <p class="hidden-content" id="week7">
+                <strong>Topic:</strong> Interactive UI Transitions<br>
+                <pre><code>.slide-in { animation: slide 1s ease-in; }</code></pre>
+                <img src="week7-preview.jpg" alt="Week 7 Preview" class="lab-preview">
+                <button onclick="openPopup('week7-final.html')">View Demo</button>
+            </p>
+        </div>
+
+        <!-- Week 8 -->
+        <div class="lab-card" onclick="toggleLab('week8')">
+            <h3>Week 8</h3>
+            <p class="hidden-content" id="week8">
+                <strong>Topic:</strong> Interactive UI Transitions<br>
+                <pre><code>.slide-in { animation: slide 1s ease-in; }</code></pre>
+                <img src="week8-preview.jpg" alt="Week 8 Preview" class="lab-preview">
+                <button onclick="openPopup('week8-final.html')">View Demo</button>
+            </p>
+        </div>
+    </div>
+</section>
+<script src="script.js"></script>
+<!-- Footer Section -->
+<footer class="footer">
+    <p>&copy; 2023 Amy's Web Animation Labs. All rights reserved.</p>
+    <p>Follow me on <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener">Twitter</a> and <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener">Instagram</a></p>
+</footer>
+</body>
+</html>
